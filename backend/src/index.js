@@ -1,6 +1,7 @@
 import express from 'express';
 import { PORT } from './config.js';
 import productRouter from './routers/product.route.js';
+import usuarioRouter from './routers/usuario.route.js';
 import morgan from 'morgan';
 
 
@@ -14,6 +15,7 @@ app.use(express.urlencoded({extended: false}));
 
 
 app.use(productRouter);
+app.use(usuarioRouter);
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
