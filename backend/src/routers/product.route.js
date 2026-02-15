@@ -1,5 +1,5 @@
 import { Router } from "express";
-import {getProductos, getProducto, crearProducto, deleteProducto, patchProducto} from "../controllers/profuct.controller.js";
+import {getProductos, getProducto, crearProducto, deleteProducto, EditProducto} from "../controllers/product.controller.js";
 
 const router = Router();
 
@@ -11,7 +11,7 @@ router.post('/products/crear', crearProducto);
 
 router.delete('/products/:id', deleteProducto);
 
-router.patch('/products/:id', patchProducto);
+router.put('/products/:id', EditProducto);
 
 
 export default router;

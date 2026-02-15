@@ -37,7 +37,7 @@ export const deleteUsuarios = async (req, res) => {
 
 };
 
-export const updateUsuario = async (req, res) => {
+export const EditUsuario = async (req, res) => {
     
     try {
     const id = parseInt(req.params.id)

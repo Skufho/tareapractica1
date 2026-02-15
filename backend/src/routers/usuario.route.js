@@ -1,6 +1,6 @@
 
 import { Router } from "express";
-import {getUsuario, getUsuarios, crearUsuario, deleteUsuarios, updateUsuario} from "../controllers/usuario.controller.js";
+import {getUsuario, getUsuarios, crearUsuario, deleteUsuarios, EditUsuario} from "../controllers/usuario.controller.js";
 
 const router = Router();
 
@@ -12,7 +12,7 @@ router.post('/usuarios/crear', crearUsuario);
 
 router.delete('/usuarios/:id', deleteUsuarios);
 
-router.patch('/usuarios/:id', updateUsuario);  
+router.put('/usuarios/:id', EditUsuario);  
 
 
 export default router;

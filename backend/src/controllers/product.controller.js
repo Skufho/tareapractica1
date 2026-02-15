@@ -36,7 +36,7 @@ export const deleteProducto = async (req, res) => {
     }
 };
 
-export const patchProducto = async (req, res) => {
+export const EditProducto = async (req, res) => {
     try {
         const id = parseInt(req.params.id);
         const {descripcion, precio} = req.body;
